@@ -65,7 +65,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/john-ayomide-5055791aa/">
               <AiFillLinkedin className="text-blue-500" />
             </a>
-            <a href="">
+            <a href="https://wa.me/2349036802688">
               <AiOutlineWhatsApp className="text-green-600" />
             </a>
             <a href="https://github.com/johnkratos1">
