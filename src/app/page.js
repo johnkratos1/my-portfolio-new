@@ -16,6 +16,7 @@ import Footer from "@/Footer";
 import ServiceCard from "@/ServiceCard";
 import Projects from "./../Projects";
 import Typewriter from "typewriter-effect";
+import Mobile from "@/Mobile";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -172,6 +173,9 @@ export default function Home() {
 
         <section className="flex lg:px-32 lg:h-[60vh] h-[70vh] md:h-[60vh] lg:mb-4 mb-1 lg:mx-10 mx-[5px]">
             <Projects />
+        </section>
+        <section className="flex lg:px-32 lg:h-[60vh] h-[70vh] md:h-[60vh] lg:mb-4 mb-1 lg:mx-10 mx-[5px]">
+            <Mobile />
         </section>
 
         <div className="bg-black lg:py-5 py-1 w-full px-2">

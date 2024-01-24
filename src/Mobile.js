@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Project from "./Project";
-import movie from "./../public/movie_app.png";
-import coinnigga from "./../public/coinniga.jpg";
-import flowday from "./../public/flowday.jpg";
-import neotisa from "./../public/neotisa.jpg";
+import melearn from "./../public/melearn.jpg";
+import km_kiosk from "./../public/km kiosk.jpg";
+// import flowday from "./../public/flowday.jpg";
+import kulipa from "./../public/kulipa.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -15,51 +15,51 @@ import "swiper/css/navigation";
 
 import { FreeMode, Pagination, Autoplay, Navigation } from "swiper/modules";
 
-function Projects() {
+function Mobile() {
   const [darkMode, setDarkMode] = useState(false);
 
   const firstSlide = () => {
     return (
       <Project
-        src={movie}
-        appName={"Movie App"}
+        src={melearn}
+        appName={"E-learning Mobile App"}
         desc={
-          "A nice movie web Application built using React.Js, Next.Js, TailwindCss and TMDB API"
+          "An E-Learning mobile Application built using React Native Expo, tailwind Css, Redux and Rest API"
         }
-        link={"https://my-movie-app-plum.vercel.app"}
+        // link={"https://my-movie-app-plum.vercel.app"}
       />
     );
   };
   const secondSlide = () => {
     return (
       <Project
-        src={coinnigga}
-        appName={"Thrift Web App"}
-        desc={"Build a thrift application JacvaScript, Css, and HTML"}
-        link={"coinnigga.vercel.app"}
+        src={km_kiosk}
+        appName={"Kid Management App"}
+        desc={"Biult using React Native CLI, JavaScript, React Native StyleSheet"}
+        // link={"coinnigga.vercel.app"}
       />
     );
   };
   const thirdSlide = () => {
     return (
       <Project
-        src={flowday}
-        appName={"A Crypo Web App"}
-        desc={"Built using JavaScript, Tailwind and React"}
-        link={"https://flowday-frontend.vercel.app"}
+        src={kulipa}
+        appName={"A Rider Service App"}
+        desc={"Built using Reat Native Expo for iOS and Android, Natrive StyleSheet"}
+        // link={"https://flowday-frontend.vercel.app"}
       />
     );
   };
-  const fourthSlide = () => {
-    return (
-      <Project
-        src={neotisa}
-        appName={"An E-Learning Platform"}
-        desc={"Built using JavaScript, Tailwind and Next JS"}
-        link={"https://neotisa-e-learning.vercel.app/"}
-      />
-    );
-  };
+//   const fourthSlide = () => {
+//     return (
+//       <Project
+//         src={neotisa}
+//         appName={"An E-Learning Platform"}
+//         desc={"Built using JavaScript, Tailwind and Next JS"}
+//         link={"https://neotisa-e-learning.vercel.app/"}
+//       />
+//     );
+//   };
 
   const slides = [
     {
@@ -74,10 +74,10 @@ function Projects() {
       id: 3,
       slide: thirdSlide(),
     },
-    {
-      id: 4,
-      slide: fourthSlide(),
-    }
+    // {
+    //   id: 4,
+    //   slide: fourthSlide(),
+    // }
   ];
 
   return <Swiper
@@ -114,4 +114,4 @@ function Projects() {
 </Swiper>
 }
 
-export default Projects;
+export default Mobile;
