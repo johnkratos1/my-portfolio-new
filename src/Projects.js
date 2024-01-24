@@ -36,7 +36,7 @@ function Projects() {
         src={coinnigga}
         appName={"Thrift Web App"}
         desc={"Build a thrift application JacvaScript, Css, and HTML"}
-        link={"coinnigga.vercel.app"}
+        link={"https://coinnigga.vercel.app"}
       />
     );
   };
@@ -104,7 +104,7 @@ function Projects() {
   }}
   speed='500'
   modules={[FreeMode, Pagination, Autoplay, Navigation]}
-  className="flex w-full border-red-500 border-2"
+  className="flex w-full border-teal-500 border-2 rounded-md"
 >
   {slides.map((item) => (
     <SwiperSlide key={item.id} className="">

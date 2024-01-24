@@ -72,7 +72,7 @@ function Footer() {
     <div className="lg:py-10 py-5 dark:text-teal-100 lg:text-3xl lg:font-bold text-white text-center">
       <footer className="flex flex-col items-center">
         <p>Thank you for visiting</p>
-        <p>Today's Date: {getUpdatedDateTime()}</p>
+        <p>{getUpdatedDateTime()}</p>
       </footer>
     </div>
   );

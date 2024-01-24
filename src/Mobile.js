@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Project from "./Project";
-import melearn from "./../public/melearn.jpg";
+import ileoja from "./../public/ileoja.jpg";
 import km_kiosk from "./../public/km kiosk.jpg";
 // import flowday from "./../public/flowday.jpg";
-import kulipa from "./../public/kulipa.jpg";
+import oHealth from "./../public/oHealth.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -21,12 +21,12 @@ function Mobile() {
   const firstSlide = () => {
     return (
       <Project
-        src={melearn}
-        appName={"E-learning Mobile App"}
+        src={ileoja}
+        appName={"A E-Commerce Marketing App"}
         desc={
-          "An E-Learning mobile Application built using React Native Expo, tailwind Css, Redux and Rest API"
+          "An E-Commerce mobile Application built using React Native, tailwind Css, Redux and Rest API"
         }
-        // link={"https://my-movie-app-plum.vercel.app"}
+        link={"https://apps.apple.com/ng/app/ileoja/id6443849011"}
       />
     );
   };
@@ -36,17 +36,17 @@ function Mobile() {
         src={km_kiosk}
         appName={"Kid Management App"}
         desc={"Biult using React Native CLI, JavaScript, React Native StyleSheet"}
-        // link={"coinnigga.vercel.app"}
+        link={"https://play.google.com/store/apps/details?id=com.kmkioskapp&hl=en_IN"}
       />
     );
   };
   const thirdSlide = () => {
     return (
       <Project
-        src={kulipa}
-        appName={"A Rider Service App"}
-        desc={"Built using Reat Native Expo for iOS and Android, Natrive StyleSheet"}
-        // link={"https://flowday-frontend.vercel.app"}
+        src={oHealth}
+        appName={"O'Health Medical App"}
+        desc={"Built using Reat Native, Native StyleSheet and Redux State Management"}
+        link={"https://play.google.com/store/apps/details?id=com.ohealth.ohealth&hl=en&gl=US"}
       />
     );
   };
@@ -104,7 +104,7 @@ function Mobile() {
   }}
   speed='500'
   modules={[FreeMode, Pagination, Autoplay, Navigation]}
-  className="flex w-full border-red-500 border-2"
+  className="flex w-full border-teal-500 border-2 rounded-md"
 >
   {slides.map((item) => (
     <SwiperSlide key={item.id} className="">
